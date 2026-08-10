@@ -4,79 +4,82 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/img/logos/logo-ugent.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>My Awesome Poster</title>
+    <title>From Server-centric to Client-centric Data Integration</title>
 </head>
-<body prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# org: http://www.w3.org/ns/org# schema: http://schema.org/ cite: http://purl.org/spar/cito/"
-      typeof="schema:Poster">
+<body prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# foaf: http://xmlns.com/foaf/0.1/ schema: http://schema.org/">
 <div id="poster-wrapper">
-    <div id="app">
+    <div id="app" typeof="schema:Poster">
         <header class="bg-dark" style="grid-column: 1/13; grid-row: 1/3;">
-            <div style="margin: 30px;">
-                <h1 property="schema:name schema:headline" class="title">My Awesome Poster</h1>
-                <h2 class="authors">
-                    <a property="schema:author" href="https://smessaert.be/" resource="https://smessaert.be/#me">Ieben Smessaert</a>,
-                    <a property="schema:author" href="https://julianrojas.org/" resource="https://julianrojas.org/#me">Julián Rojas Meléndez</a>,
-                    <a property="schema:author" href="https://pietercolpaert.be/" resource="https://pietercolpaert.be/#me">Pieter Colpaert</a>
-                </h2>
-                <p class="affiliations">IDLab, Department of Electronics and Information Systems, Ghent University - imec,
-                    Ghent, Belgium</p>
+            <div class="header-content">
+                <h1 property="schema:name schema:headline" class="title">From Server-centric to Client-centric Data Integration<br/>over Decentralized Knowledge Graphs with Personal Query Engines</h1>
+                <h2 class="authors"><a property="schema:author" href="https://www.rubensworks.net/" resource="https://www.rubensworks.net/#me">Ruben Taelman</a></h2>
+                <p class="affiliations">Department of Electronics and Information Systems, Ghent University – imec · Research Foundation – Flanders (FWO)</p>
             </div>
         </header>
 
-        <section class="bg-light" style="grid-column: 1/9; grid-row: 3/6; margin-left: 30px;" rel="schema:hasPart" resource="#introduction">
-            <h2 property="schema:name">Introduction</h2>
+        <section class="bg-light intro" style="grid-column: 1/6; grid-row: 3/6;" rel="schema:hasPart" resource="#introduction">
+            <h2 property="schema:name">The opportunity</h2>
+            <p><strong>Decentralized Knowledge Graphs (DKGs)</strong> let people and organizations keep control of their data while still interlinking it across boundaries.</p>
+            <p>Today, integration is mostly <em>server-centric</em>: data is copied into cloud systems that users cannot inspect or control.</p>
+            <div class="callout"><strong>Mindset shift:</strong> reusable <strong>personal query engines</strong> on the user's device integrate data close to the user—controlled, transparent, and private by design.</div>
+        </section>
+
+        <section class="figure-panel" style="grid-column: 6/13; grid-row: 3/7;" rel="schema:hasPart" resource="#overview">
+            <h2>Client-centric data integration</h2>
+            <img class="main-figure" src="/img/mainfigure.svg" alt="Personal query engine integrates decentralized heterogeneous data sources for multiple applications"/>
+            <p class="caption">Personal query engines separate where data is stored from where it is integrated.</p>
+        </section>
+
+        <section class="challenge challenge-one" style="grid-column: 1/5; grid-row: 6/11;" rel="schema:hasPart" resource="#challenge1">
+            <div class="challenge-number">01</div>
+            <h2>Heterogeneous data sources</h2>
+            <p class="challenge-lead">How can an engine discover and query sources whose interfaces are unknown and different?</p>
+            <h3>Objectives</h3>
             <ul>
-                <li>
-                    <i class="fa-solid fa-circle-exclamation fa-2xs li-icon"></i> Lorem ipsum dolor sit amet.
-                </li>
-                <li style="margin-top: 1.5em;">
-                    <i class="fa-solid fa-question-circle fa-2xs li-icon"></i> Ex sapien vitae pellentesque sem placerat in id.
-                    <ul>
-                        <li style="margin-top: 0.5em;"><i class="fa-solid fa-share fa-2xs li-icon" style="transform: scale(1, -1)"></i> Pretium tellus duis convallis tempus leo eu aenean.</li>
-                        <li style="margin-top: 1em;"><i class="fa-solid fa-share fa-2xs li-icon" style="transform: scale(1, -1)"></i> Semper vel class aptent taciti sociosqu ad litora.</li>
-                    </ul>
-                </li>
+                <li><i class="fa-solid fa-compass li-icon"></i><strong>1a · Discover capabilities</strong><br/><span>Declarative hypermedia query shapes remove prior assumptions.</span></li>
+                <li><i class="fa-solid fa-diagram-project li-icon"></i><strong>1b · Plan adaptively</strong><br/><span>Use authority over shapes and larger subqueries during execution.</span></li>
+                <li><i class="fa-solid fa-filter li-icon"></i><strong>1c · Prune links</strong><br/><span>Reduce traversal through early-completing authoritative joins.</span></li>
             </ul>
         </section>
 
-        <section class="bg-accent" style="grid-column: 1/9; grid-row: 6/9; margin-left: 30px;" rel="schema:hasPart" resource="#icons">
-            <h2 property="schema:name" style="color: white;">Using icons</h2>
-            <p>To add icons to your lists, you can use FontAwesome icons. For example:</p>
-            <pre><code>&lt;i class="fa-solid fa-circle-exclamation<br/> fa-2xs li-icon"&gt;&lt;/i&gt;</code></pre>
-            <p>For more information on how to use FontAwesome icons, visit <a href="https://fontawesome.com/icons" target="_blank">fontawesome.com/icons</a>.</p>
+        <section class="challenge challenge-two" style="grid-column: 5/9; grid-row: 7/11;" rel="schema:hasPart" resource="#challenge2">
+            <div class="challenge-number">02</div>
+            <h2>Personalized processing</h2>
+            <p class="challenge-lead">How can users decide how their query engine should search, rank, and explain?</p>
+            <h3>Objectives</h3>
+            <ul>
+                <li><i class="fa-solid fa-sliders li-icon"></i><strong>2a · Represent preferences</strong><br/><span>Compose explicit, implicit, trust, and operational preferences.</span></li>
+                <li><i class="fa-solid fa-route li-icon"></i><strong>2b · Use preferences</strong><br/><span>Drive focused traversal and expose how- and where-provenance.</span></li>
+                <li><i class="fa-solid fa-clock-rotate-left li-icon"></i><strong>2c · Learn patterns</strong><br/><span>Cache and prefetch based on recurring user query patterns.</span></li>
+            </ul>
         </section>
 
-        <section class="bg-light" style="grid-column: 9/13; grid-row: 3/9; margin-right: 30px;" rel="schema:hasPart" resource="#getting-started">
-            <h2 property="schema:name">Getting Started</h2>
-            <p>You can configure your theme colors in <span class="text-secondary">css/style.scss</span>.</p>
-            <p>You can choose different section layouts by using the grid-column and grid-row CSS properties.</p>
-            <p>By default, a 12 by 12 grid is configured. Spanning the full width is done with the value <span class="text-secondary">1/13</span> which means, from the start of grid 1 to the start of grid 13 (or thus end of 12).</p>
-            <p>For example, to create a section that spans the full width and 3 rows in height, you can use the following CSS properties:</p>
-            <pre><code>grid-column: 1/13;<br/>grid-row: 3/6;</code></pre>
-            <p>To add some spacing, you can use margin-left and margin-right properties.</p>
-            <p>For more information on CSS Grid, visit <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">css-tricks.com/snippets/css/complete-guide-grid/</a>.</p>
+        <section class="challenge challenge-three" style="grid-column: 9/13; grid-row: 7/11;" rel="schema:hasPart" resource="#challenge3">
+            <div class="challenge-number">03</div>
+            <h2>Context-aware optimization</h2>
+            <p class="challenge-lead">How can client-driven processing meet interactive performance goals?</p>
+            <h3>Objectives</h3>
+            <ul>
+                <li><i class="fa-solid fa-battery-half li-icon"></i><strong>3a · Adapt to resources</strong><br/><span>Optimize speed, battery, CPU, latency, and bandwidth together.</span></li>
+                <li><i class="fa-solid fa-layer-group li-icon"></i><strong>3b · Reuse executions</strong><br/><span>Rewrite queries using federated materialized RDF views.</span></li>
+                <li><i class="fa-solid fa-user-shield li-icon"></i><strong>3c · Outsource privately</strong><br/><span>Decompose queries across privacy-preserving and public parties.</span></li>
+            </ul>
         </section>
 
-        <section class="bg-light" style="grid-column: 1/13; grid-row: 9/12; margin-left: 30px; margin-right: 30px;" rel="schema:hasPart" resource="#conclusion">
-            <h2 property="schema:name">Results and Conclusion</h2>
+        <section class="impact bg-accent" style="grid-column: 1/13; grid-row: 11/12;" rel="schema:hasPart" resource="#conclusion">
+            <h2>Impact</h2>
+            <p>Client-centric integration enables performant querying without prior source knowledge, preference-specific optimization, and resource-aware privacy-preserving computation—supporting healthcare, social media, personal genomics, and other decentralized applications.</p>
         </section>
 
-
-        <div class="logo" style="grid-column: 3/5;">
-            <a href="https://www.ugent.be/en" target="_blank">
-                <img src="/img/logos/logo-ugent.png" alt="UGent logo" style="height: 55px;"/>
-            </a>
-        </div>
-        <div class="logo" style="grid-column: 5/8;">
-            <a href="https://www.imec-int.com/en" target="_blank">
-                <img src="/img/logos/logo-imec.png" alt="imec logo" style="height: 35px;"/>
-            </a>
-        </div>
-        <div class="logo" style="grid-column: 8/11;">
-            <a href="https://idlab.technology/" target="_blank">
-                <img src="/img/logos/logo-idlab.png" alt="IDLab logo" style="height: 40px; margin-bottom: -5px;"/>
-            </a>
-        </div>
+        <footer class="footer-bar">
+            <span>Semantics 2026 · Article / position paper</span>
+            <span class="footer-links"><a href="https://www.rubensworks.net/raw/publications/2026/taelman_semanticsbluesky_clientcentricqueryengines_2026.pdf">paper</a> · <a href="https://github.com/rubensworks/article-semantics-bluesky-clientcentric">sources</a></span>
+            <span class="footer-logos">
+                <img src="/img/logos/logo-ugent-white.svg" alt="Ghent University" />
+                <img src="/img/logos/logo-imec-white.svg" alt="imec" />
+                <img src="/img/logos/logo-idlab-white.svg" alt="IDLab" />
+            </span>
+        </footer>
     </div>
 </div>
 <script type="module" src="/js/main.js"></script>

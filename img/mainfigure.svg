@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 490" role="img">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L9,3 L0,6 Z" fill="#333"/></marker>
+    <style>
+      text{font-family:Arial,sans-serif;fill:#1d1d1b} .muted{fill:#777;font-size:14px} .label{font-weight:bold;font-size:16px}
+      .source{stroke:#333;stroke-width:2} .line{stroke:#333;stroke-width:2.5;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect x="20" y="18" width="860" height="245" rx="18" fill="#f6fdf5" stroke="#222" stroke-width="5"/>
+  <text x="450" y="43" text-anchor="middle" class="muted">CLIENT DEVICE · control, transparency, privacy</text>
+  <g transform="translate(72 68)">
+    <rect width="170" height="65" rx="8" fill="#eeeaff" stroke="#323296" stroke-width="2"/><rect width="170" height="12" rx="6" fill="#d2d0ff"/>
+    <circle cx="15" cy="6" r="3" fill="#e83f2b"/><circle cx="27" cy="6" r="3" fill="#efc243"/><circle cx="39" cy="6" r="3" fill="#50a15a"/><text x="85" y="44" text-anchor="middle" class="label">App 1</text>
+    <rect x="255" width="170" height="65" rx="8" fill="#eeeaff" stroke="#323296" stroke-width="2"/><rect x="255" width="170" height="12" rx="6" fill="#d2d0ff"/><text x="340" y="44" text-anchor="middle" class="label">App 2</text>
+    <rect x="510" width="170" height="65" rx="8" fill="#eeeaff" stroke="#323296" stroke-width="2"/><rect x="510" width="170" height="12" rx="6" fill="#d2d0ff"/><text x="595" y="44" text-anchor="middle" class="label">App 3</text>
+  </g>
+  <g transform="translate(360 157)">
+    <circle cx="90" cy="42" r="52" fill="#e83f2b" stroke="#222" stroke-width="3"/>
+    <circle cx="90" cy="42" r="22" fill="#f6fdf5" stroke="#222" stroke-width="3"/>
+    <text x="90" y="38" text-anchor="middle" font-size="13" font-weight="bold">QUERY</text><text x="90" y="53" text-anchor="middle" font-size="13" font-weight="bold">ENGINE</text>
+  </g>
+  <path d="M155 133 L410 183 M410 133 L450 183 M665 133 L530 183" class="line"/>
+  <text x="450" y="244" text-anchor="middle" class="muted">declarative queries · reusable across applications</text>
+  <text x="450" y="298" text-anchor="middle" class="label">DISCOVERY + ADAPTIVE PLANNING</text>
+  <path d="M450 264 L450 326" class="line"/>
+  <g class="source">
+    <rect x="45" y="350" width="165" height="68" rx="10" fill="#8fe8ba"/><text x="127" y="378" text-anchor="middle" class="label">Personal source</text><text x="127" y="400" text-anchor="middle" class="muted">private data</text>
+    <rect x="260" y="350" width="165" height="68" rx="10" fill="#e88fba"/><text x="342" y="378" text-anchor="middle" class="label">Heterogeneous</text><text x="342" y="400" text-anchor="middle" class="muted">source APIs</text>
+    <rect x="475" y="350" width="165" height="68" rx="10" fill="#8fbae8"/><text x="557" y="378" text-anchor="middle" class="label">Public source</text><text x="557" y="400" text-anchor="middle" class="muted">linked data</text>
+    <rect x="690" y="350" width="165" height="68" rx="10" fill="#e8e88f"/><text x="772" y="378" text-anchor="middle" class="label">Remote engine</text><text x="772" y="400" text-anchor="middle" class="muted">surrounding resources</text>
+  </g>
+  <path d="M430 326 L127 350 M440 326 L342 350 M460 326 L557 350 M470 326 L772 350" class="line"/>
+</svg>

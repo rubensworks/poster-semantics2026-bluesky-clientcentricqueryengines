@@ -1,7 +1,7 @@
-$theme-color-primary: #0ead69;
-$theme-color-secondary: #0b7e4d;
-$theme-color-accent: #7bd2ad;
-$theme-color-light: #f0fdf4;
+$theme-color-primary: #8b1e1e;
+$theme-color-secondary: #6b1515;
+$theme-color-accent: #cc3333;
+$theme-color-light: #fdf5f5;
 $theme-color-muted: #6b7280;
 $theme-font-family: Candara, sans-serif;
 
@@ -44,6 +44,10 @@ header {
   }
 }
 
+.header-content {
+  margin: 22px 30px;
+}
+
 section {
   border-radius: 10px;
   padding: 10px;
@@ -52,6 +56,109 @@ section {
   h2 {
     color: $theme-color-primary;
     margin-block-start: 0.5em;
+  }
+
+  .intro p {
+    margin: 0.55em 0;
+    line-height: 1.25;
+  }
+
+  .callout {
+    background: white;
+    border-left: 5px solid $theme-color-accent;
+    padding: 8px 10px;
+    margin-top: 10px;
+  }
+
+  .figure-panel {
+    border: 2px solid #eadada;
+    border-radius: 10px;
+    padding: 8px 12px;
+
+    h2 {
+      margin: 0 0 2px;
+    }
+  }
+
+  .main-figure {
+    display: block;
+    width: 100%;
+    height: 285px;
+  }
+
+  .caption {
+    margin: 0;
+    color: $theme-color-muted;
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .challenge {
+    border: 2px solid #eadada;
+    border-top: 8px solid $theme-color-primary;
+    padding: 8px 12px;
+
+    h2 {
+      margin: 0 0 4px;
+      font-size: 19px;
+    }
+
+    h3 {
+      color: $theme-color-secondary;
+      font-size: 13px;
+      margin: 8px 0 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .challenge-lead {
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      font-size: 12px;
+      line-height: 1.15;
+      margin: 7px 0;
+    }
+
+    li span {
+      color: #333;
+    }
+  }
+
+  .challenge-number {
+    color: $theme-color-accent;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+  }
+
+  .impact {
+    border-radius: 10px;
+    padding: 7px 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    color: white;
+
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.15;
+    }
   }
 
   ul {
@@ -141,6 +248,33 @@ small {
 .li-icon {
   margin-bottom: -1px;
   color: $theme-color-primary;
+}
+
+.footer-bar {
+  grid-column: 1/13;
+  grid-row: 12;
+  background-color: $theme-color-primary;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  font-size: 12px;
+
+  a {
+    color: white;
+  }
+
+  .footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      max-height: 28px;
+      max-width: 100px;
+    }
+  }
 }
 
 @media print {
