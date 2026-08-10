@@ -12,7 +12,7 @@
     <div id="app">
 
         <!-- ===== HEADER ===== -->
-        <header class="bg-dark" style="grid-column: 1/13; grid-row: 1/3; display: flex; align-items: center; padding: 12px 20px; gap: 12px; overflow: hidden; box-sizing: border-box;">
+        <header class="bg-dark" style="grid-column: 1/13; grid-row: 1/4; display: flex; align-items: center; padding: 12px 20px; gap: 12px; overflow: hidden; box-sizing: border-box">
             <!-- Left: UGent logo -->
             <div style="flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 4px;">
                 <img src="/img/logos/logo-ugent-white.svg" alt="UGent" style="height: 48px; display:block;"/>
@@ -21,8 +21,9 @@
             <!-- Center: Title + Authors -->
             <div style="flex: 1; text-align: center; min-width: 0;">
                 <div property="schema:name schema:headline" style="color: white; font-weight: bold; line-height: 1.15; margin-bottom: 4px;">
-                    <div style="font-size: 24px; letter-spacing: -0.5px;">Towards Client-Centric Query Engines for the Decentralized Web</div>
-                    <div style="font-size: 13px; font-weight: normal; opacity: 0.85; margin-top: 4px;">Enabling Personal, Transparent, and Privacy-Preserving Data Integration over Decentralized Knowledge Graphs</div>
+                    <div style="font-size: 38px; letter-spacing: -0.5px;">Towards Client-Centric Query Engines<br \>for the Decentralized Web</div>
+                    <div style="font-size: 18px; font-weight: normal; opacity: 0.85; margin-top: 4px;">Enabling Personal, Transparent, and Privacy-Preserving Data Integration<br \>over Decentralized Knowledge Graphs</div>
+
                 </div>
                 <div class="authors" style="font-size: 12px; margin-top: 6px;">
                     <a property="schema:author" href="https://www.rubensworks.net/" resource="https://www.rubensworks.net/#me" style="color: #cce4ff;">Ruben Taelman</a>
@@ -39,12 +40,12 @@
         </header>
 
         <!-- ===== INTRODUCTION (left, rows 3-5) ===== -->
-        <section class="bg-light" style="grid-column: 1/6; grid-row: 3/6; margin-left: 10px;" rel="schema:hasPart" resource="#introduction">
+        <section class="bg-light" style="grid-column: 1/7; grid-row: 4/7; margin-left: 10px;" rel="schema:hasPart" resource="#introduction">
             <h2 property="schema:name" style="font-size: 15px;">Context &amp; Problem</h2>
             <ul style="font-size: 12px;">
                 <li>
                     <i class="fa-solid fa-triangle-exclamation fa-2xs li-icon"></i>
-                    <strong>Most Web data is centralized</strong> in the hands of a few multinationals — raising concerns around privacy, censorship, and data breaches.
+                    <strong>Most Web data is centralized</strong> in the hands of a few organizations &rarr; raises concerns around privacy, censorship, and data breaches.
                 </li>
                 <li style="margin-top: 0.7em;">
                     <i class="fa-solid fa-diagram-project fa-2xs li-icon"></i>
@@ -52,7 +53,7 @@
                 </li>
                 <li style="margin-top: 0.7em;">
                     <i class="fa-solid fa-server fa-2xs li-icon"></i>
-                    Today, integration is <strong>server-centric</strong>: data is extracted and centralized in the cloud, away from the user — sacrificing control, transparency, and privacy.
+                    Today, integration is <strong>server-centric</strong>: data is extracted and centralized in the cloud, away from the user &rarr; sacrifices control, transparency, and privacy.
                 </li>
                 <li style="margin-top: 0.7em;">
                     <i class="fa-solid fa-bullseye fa-2xs li-icon"></i>
@@ -62,8 +63,8 @@
         </section>
 
         <!-- ===== MAIN FIGURE (right, rows 3-8) ===== -->
-        <section class="bg-light" style="grid-column: 6/13; grid-row: 3/9; padding: 6px 8px; margin-right: 10px; overflow: hidden;" rel="schema:hasPart" resource="#figure">
-            <h2 property="schema:name" style="text-align:center; margin-bottom: 2px; font-size: 14px;">Personal Query Engines for Decentralized Knowledge Graphs</h2>
+        <section class="bg-light" style="grid-column: 7/13; grid-row: 4/7; padding: 6px 8px; margin-right: 10px; overflow: hidden;" rel="schema:hasPart" resource="#figure">
+            <!--<h2 property="schema:name" style="text-align:center; margin-bottom: 2px; font-size: 14px;">Personal Query Engines for Decentralized Knowledge Graphs</h2>-->
             <img src="img/mainfigure.svg" alt="Main figure: personal query engine integrating decentralized data sources"
                  style="width: 100%; height: auto; display: block; margin-top: 2px;"/>
             <p style="font-size: 9px; color: #555; text-align: center; margin: 2px 0 0;">
@@ -72,7 +73,7 @@
         </section>
 
         <!-- ===== APPROACH (left, rows 5-8) ===== -->
-        <section class="bg-light" style="grid-column: 1/6; grid-row: 6/9; margin-left: 10px;" rel="schema:hasPart" resource="#approach">
+        <section class="bg-light" style="grid-column: 1/13; grid-row: 7/9; margin-left: 10px;" rel="schema:hasPart" resource="#approach">
             <h2 property="schema:name" style="font-size: 15px;">Proposed Approach</h2>
             <ul style="font-size: 12px;">
                 <li>
@@ -85,11 +86,11 @@
                 </li>
                 <li style="margin-top: 0.6em;">
                     <i class="fa-solid fa-shield-halved fa-2xs li-icon"></i>
-                    The engine is <strong>controlled, transparent, and private by design</strong> — private data never leaves the user's trusted zone.
+                    The engine is <strong>controlled, transparent, and private by design</strong> &rarr; private data never leaves the user's trusted zone.
                 </li>
                 <li style="margin-top: 0.6em;">
                     <i class="fa-solid fa-clock fa-2xs li-icon"></i>
-                    Enabled by <strong>legislative pressure</strong> (GDPR, AI Act) and increasingly powerful client hardware and fast networks (5G, Wi-Fi).
+                    Timely due to <strong>legislative pressure</strong> (GDPR, AI Act) and increasingly powerful client hardware and fast networks (5G, Wi-Fi).
                 </li>
             </ul>
         </section>
@@ -103,15 +104,15 @@
             <p style="font-size: 10.5px; color: white; margin: 0 0 5px;"><em>Fundamental understanding of client-driven query processing in a large heterogeneous environment.</em></p>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;">
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 1a – Hypermedia-based Query Shapes</div>
-                    <p>Enable engines to execute queries over interfaces <strong>without prior assumptions</strong> on their expressivity. Declarative query shapes allow containment-based query planning.</p>
+                    <div class="challenge-title">O1a. Hypermedia-based query shapes</div>
+                    <p>Enable engines to execute queries over interfaces <strong>without prior assumptions</strong> on their expressivity. Declarative query shapes should allow containment-based query planning.</p>
                 </div>
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 1b – Authority-based Source Selection</div>
-                    <p>Use the <strong>full expressivity</strong> of discovered interfaces. Publishers signal authority over data shapes; exclusive groups enable assignment to larger subqueries.</p>
+                    <div class="challenge-title">O1b. Adaptive query planning</div>
+                    <p>Optimize querying over dynamically discovered sources. Publishers signal <strong>authority over data shapes</strong>; exclusive groups enable assignment to larger subqueries.</p>
                 </div>
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 1c – Link Pruning via Authority Shapes</div>
+                    <div class="challenge-title">O1c. Join/authority-aware link pruning</div>
                     <p><strong>Reduce the number of links</strong> during cross-source traversal by pruning via authority-based subqueries and early-completing join operations.</p>
                 </div>
             </div>
@@ -126,15 +127,15 @@
             <p style="font-size: 10.5px; color: white; margin: 0 0 5px;"><em>Empowering users with personalized control over client-driven query processing.</em></p>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;">
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 2a – Decentralized Preference Model</div>
-                    <p>Model <strong>explicit and implicit user preferences</strong> scattered across sources — topical interests, trust relationships, operational settings, and provenance history.</p>
+                    <div class="challenge-title">O2a. Decentralized Preference Model</div>
+                    <p>Model <strong>explicit and implicit user preferences</strong> scattered across sources; topical interests, trust relationships, operational settings, and provenance history.</p>
                 </div>
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 2b – Preference-Driven Query Algorithms</div>
+                    <div class="challenge-title">O2b. Preference-Driven Querying</div>
                     <p>Drive traversal via a <strong>preference-based cost model</strong> for link pruning and prioritization, and incorporate how/where-provenance into query results.</p>
                 </div>
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 2c – User-Pattern-Aware Caching</div>
+                    <div class="challenge-title">O2c. User-Pattern-Aware Caching</div>
                     <p>Speed up <strong>sequences of similar queries</strong> through pattern-aware caching and link prefetching, using partial cardinalities from the cache for query planning.</p>
                 </div>
             </div>
@@ -149,15 +150,15 @@
             <p style="font-size: 10.5px; color: white; margin: 0 0 5px;"><em>Making client-centric processing practical through optimization to user-relevant metrics.</em></p>
             <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px;">
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 3a – Resource-Aware Cost Model</div>
+                    <div class="challenge-title">O3a. Resource-Aware Cost Model</div>
                     <p>Optimize execution using <strong>surrounding resources</strong>: battery, CPU, latency, bandwidth. Adapt the plan dynamically during long-running or mobile queries.</p>
                 </div>
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 3b – Federated Materialized Views</div>
+                    <div class="challenge-title">O3b. Federated Materialized Views</div>
                     <p>Reuse executions by other engines over <strong>similar public data</strong>. Extend RDF views to multiple heterogeneous sources and introduce federated rewriting.</p>
                 </div>
                 <div class="challenge-box">
-                    <div class="challenge-title">Obj. 3c – Privacy-Aware Query Outsourcing</div>
+                    <div class="challenge-title">O3c. Privacy-Aware Query Outsourcing</div>
                     <p>Outsource computations with <strong>privacy preservation</strong> via query decomposition across heterogeneous sources, balancing MPC and privacy-agnostic parties.</p>
                 </div>
             </div>
